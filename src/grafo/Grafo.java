@@ -16,6 +16,10 @@ public class Grafo {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Lista list = new Lista();
+        int num = 2;
+        list.agregarAlFinal(num, "B", "A");
+        list.agregarAlFinal(num + 1, "C", "A");
+        list.imprimirLista();
     }
-    
 }
