@@ -16,17 +16,22 @@ public class Nodo {
     // Variable para enlazar los nodos.
     private Nodo siguiente;
     private Nodo anterior;
-    
     /**
      * Constructor que inicializamos el valor de las variables.
      */
-    public void Nodo(){
+    public void Nodo() {
         this.peso = 0;
         this.nombreVertice = "";
         this.siguiente = null;
         this.anterior = null;
     }
     
+    public void Nodo(int peso, String nombreVertice) {
+        this.peso = peso;
+        this.nombreVertice = nombreVertice;
+        this.siguiente = null;
+        this.anterior = null;
+    }
     // Métodos get y set para los atributos.
     public int getPeso() {
         return peso;
