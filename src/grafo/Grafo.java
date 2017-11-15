@@ -1,25 +1,31 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package grafo;
+
+import java.util.ArrayList;
 
 /**
  *
  * @author Marco
  */
 public class Grafo {
-
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        /*
         Lista list = new Lista();
         int num = 2;
         list.agregarAlFinal(num, "B", "A");
         list.agregarAlFinal(num + 1, "C", "A");
         list.imprimirLista();
+        */
+        int i;
+        Archivo arch = new Archivo("grafo");
+        ArrayList arrDListAdya;
+        arrDListAdya = arch.leerListasAdyacentesDeArchivo();
+        Lista list;
+        for (i = 0; i < arrDListAdya.size(); i++) {
+            list = (Lista) arrDListAdya.get(i);
+            list.imprimirLista();
+        }
     }
 }
