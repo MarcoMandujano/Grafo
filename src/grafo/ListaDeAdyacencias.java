@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package grafo;
 
 import java.io.BufferedReader;
@@ -14,7 +9,7 @@ import java.util.ArrayList;
  *
  * @author Clases
  */
-public class Archivo {
+public class ListaDeAdyacencias {
     /**
      * Atributo que contiene las listas de cada fila del archivo.
      */
@@ -32,7 +27,7 @@ public class Archivo {
      * @param nombreArchivo Es el nombre que se le dara al archivo cuendo se
      *                      constuye.
      */
-    public Archivo(String nombreArchivo) {
+    public ListaDeAdyacencias(String nombreArchivo) {
         this.arregloDeListasAdya = new ArrayList();
         this.nombreArchivo = nombreArchivo;
         this.archivo = new File(this.nombreArchivo + ".txt");

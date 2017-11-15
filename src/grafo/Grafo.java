@@ -19,7 +19,7 @@ public class Grafo {
         list.imprimirLista();
         */
         int i;
-        Archivo arch = new Archivo("grafo");
+        ListaDeAdyacencias arch = new ListaDeAdyacencias("grafo");
         ArrayList arrDListAdya;
         arrDListAdya = arch.leerListasAdyacentesDeArchivo();
         Lista list;
